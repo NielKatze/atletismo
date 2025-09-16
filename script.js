@@ -1,3 +1,8 @@
-const btn = document.querySelector('.menu-toggle');
-const nav = document.querySelector('.nav-links');
-btn.addEventListener('click', ()=> nav.classList.toggle('show'));
+function toggleMenu() {
+    const menu = document.querySelector('.menu');
+    if(menu.style.display === 'flex') {
+        menu.style.display = 'none';
+    } else {
+        menu.style.display = 'flex';
+    }
+}
